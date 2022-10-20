@@ -1,0 +1,53 @@
+
+
+:host ::ng-deep{
+    p-gmap > div{
+        height: calc(100vh - 220px) !important;
+    }
+}
+.content-wrapper{
+    height: calc(100vh - 210px);
+
+    .cards-wrapper{
+        height: calc(100vh - 220px);
+        overflow: auto;
+    }
+}
+.card{
+    margin-bottom: 15px;
+    h6{
+        font-weight: 700;
+    }
+    span{
+        b{
+            font-weight: 600;
+            color: #aaa !important;
+            font-size: 14px;
+        }
+    }
+
+    .button-danger{
+        background-color: #FFECE5;
+        color: #FF3D00;
+        font-weight: 600;
+        border: 1px solid #FF3D00;
+    }
+    .button-success{
+        background-color: #D7E5DA;
+        color: #53D86A;
+        font-weight: 600;
+        border: 1px solid #53D86A;
+    }
+    .button-primary{
+        background-color: #ECECED;
+        color: #B8B9BC;
+        font-weight: 600;
+        border: 1px solid #B8B9BC;
+    }
+    .due-date{
+        color: #FF3D00;
+    }
+}
+.mh{
+    max-height: 748px;
+}

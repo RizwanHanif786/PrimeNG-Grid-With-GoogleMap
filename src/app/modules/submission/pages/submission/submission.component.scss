@@ -1,0 +1,200 @@
+
+/* You can add global styles to this file, and also import other style files */
+:host ::ng-deep .p-dialog .product-image {
+    width: 150px;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+
+
+:host ::ng-deep {
+    .p-paginator {
+        .p-paginator-current {
+            margin-left: auto;
+        }
+    }
+    .p-dropdown {
+        margin-right: 14px !important;
+      }
+    
+    .p-progressbar {
+        height: .5rem;
+        background-color: #D8DADC;
+    
+        .p-progressbar-value {
+            background-color: #607D8B;
+        }
+    }
+    
+    .table-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .p-calendar .p-datepicker {
+        min-width: 25rem;
+    
+        td {
+            font-weight: 400;
+        }
+    }
+    .p-button.p-button-icon-only {
+        width: 2.357rem;
+        padding: 0.5rem 0;
+        margin-right: 12px;
+    }
+    
+    .p-datatable.p-datatable-customers {
+        .p-datatable-header {
+            padding: 1rem;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    
+        .p-paginator {
+            padding: 1rem;
+        }
+    
+        .p-datatable-thead > tr > th {
+            text-align: left;
+        }
+    
+        .p-datatable-tbody > tr > td {
+            cursor: auto;
+        }
+    
+        .p-dropdown-label:not(.p-placeholder) {
+            text-transform: uppercase;
+        }
+    }
+    
+    /* Responsive */
+    .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+        display: none;
+    }
+
+.p-button.p-button-success, .p-buttonset.p-button-success > .p-button, .p-splitbutton.p-button-success > .p-button {
+    color: #ffffff;
+    background: #689F38;
+    border: 1px solid #689F38;
+    margin-right: 12px;
+}
+.submission-wrapper{
+    .p-inputtext{
+        font-family: "Roboto-Regular";
+        padding: 8px 12px;
+    }
+    .p-dropdown,
+    .p-inputtext,
+    .p-calendar{
+        font-family: "Roboto-Regular";
+        border-radius: 4px;
+    }
+    .search-input{
+        input{
+            font-family: "Roboto-Regular";
+            width: 100%;
+            padding: 8px 40px !important;
+        }    
+    }
+    .p-datepicker-trigger{
+        font-family: "Roboto-Regular";
+        position: absolute;
+        color: #686868;
+        background: unset;
+        border: 0;
+        box-shadow: none !important;
+        outline: none;
+    }
+    p-calendar{
+        position: relative;
+    }
+    p-calendar .p-inputtext{
+        padding-left: 35px;
+    }
+    .p-selectbutton{
+        .p-button{
+            font-family: "Roboto-Regular";
+            padding: 9px 20px;
+            outline: none;
+            box-shadow: none;
+        }
+        .p-button-label{
+            font-family: "Roboto-Regular";
+            font-weight: 400;
+        }
+    }
+}
+  }
+  
+  @media screen and (max-width: 960px) {
+    :host ::ng-deep {
+        .p-datatable {
+            &.p-datatable-customers {
+                .p-datatable-thead > tr > th,
+                .p-datatable-tfoot > tr > td {
+                    display: none !important;
+                }
+    
+                .p-datatable-tbody > tr {
+                    border-bottom: 1px solid var(--layer-2);
+    
+                    > td {
+                        text-align: left;
+                        display: block;
+                        border: 0 none !important;
+                        width: 100% !important;
+                        float: left;
+                        clear: left;
+                        border: 0 none;
+    
+                        .p-column-title {
+                            padding: .4rem;
+                            min-width: 30%;
+                            display: inline-block;
+                            margin: -.4rem 1rem -.4rem -.4rem;
+                            font-weight: bold;
+                        }
+    
+                        .p-progressbar {
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+  }
+  
+
+  .submission-wrapper{
+    padding: 20px 35px;
+    font-family: 'Roboto-Regular';
+
+    .title{
+        margin-bottom: 25px;
+        h3{
+            font-family: 'Roboto';
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+    .search-input{
+        max-width: 400px;
+        width: 100%;
+    }
+    .search-input,
+    p-calendar,
+    p-dropdown{
+        display: flex;
+        align-items: center;
+    }
+    .export-button{
+        font-weight: 600;
+        font-size: 14px;
+        color: #2085D5;
+    }
+  }
