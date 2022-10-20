@@ -1,5 +1,14 @@
 # SubmissionPage
 
+
+![image](https://user-images.githubusercontent.com/81885148/196993136-e5a16572-7374-4f6e-b763-a48fd5794c12.png)
+
+![image](https://user-images.githubusercontent.com/81885148/196993189-a5c7b84a-d28a-4e30-8496-1fee057d4b52.png)
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
 ## Development server
