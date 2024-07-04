@@ -29,6 +29,7 @@ export class SubmissionMapComponent implements OnInit {
         };
         this.initOverlays();
         this.infoWindow = new google.maps.InfoWindow();
+        console.log(this.infoWindow, 'this.infoWindow')
     }
 
     handleMapClick(event: any) {
