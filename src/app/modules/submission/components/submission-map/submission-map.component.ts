@@ -45,10 +45,11 @@ export class SubmissionMapComponent implements OnInit {
         let isMarker = event.overlay.getTitle != undefined;
 
         if (isMarker) {
+            console.log('isMarker: ', isMarker);
             let title = event.overlay.getTitle();
             this.infoWindow.setContent('' + title + '');
             this.infoWindow.open(event.map, event.overlay);
-            event.map.setCenter(event.overlay.getPosition());
+            event.map.setCenter(event.overlay.getPosition())
 
             this.messageService.add({ severity: 'info', summary: 'Marker Selected', detail: title });
         }
