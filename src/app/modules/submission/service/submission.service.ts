@@ -14,8 +14,8 @@ export class SubmissionService {
     getSubmissionsData() {
         return this.http.get<any>('assets/submissions.json')
             .toPromise()
-            .then(res => <any[]>res.data)
-            .then(data => { return data; });
+            .then((res:any) => <any[]>res.data)
+            .then((data:any) => { return data; });
     }
 
     /**
