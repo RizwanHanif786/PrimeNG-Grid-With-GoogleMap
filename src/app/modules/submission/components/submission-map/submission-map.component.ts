@@ -29,7 +29,6 @@ export class SubmissionMapComponent implements OnInit {
         };
         this.initOverlays();
         this.infoWindow = new google.maps.InfoWindow();
-        console.log(this.infoWindow, 'this.infoWindow')
     }
 
     handleMapClick(event: any) {
@@ -45,8 +44,7 @@ export class SubmissionMapComponent implements OnInit {
         let isMarker = event.overlay.getTitle != undefined;
 
         if (isMarker) {
-            console.log('isMarker: ', isMarker);
-            let title = event.overlay.getTitle();
+                       let title = event.overlay.getTitle();
             this.infoWindow.setContent('' + title + '');
             this.infoWindow.open(event.map, event.overlay);
             event.map.setCenter(event.overlay.getPosition())
