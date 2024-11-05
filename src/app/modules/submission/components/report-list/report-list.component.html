@@ -1,0 +1,29 @@
+<p-table #dt [value]="rowData" [columns]="columnDefs" [rows]="7" [paginator]="true"
+    [globalFilterFields]="['task','status','id','from', 'to', 'address', 'dueDate']" [(selection)]="selectedRow"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="{first} - {last} of {totalRecords} submissions"
+    [showCurrentPageReport]="true">
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 3rem">
+                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th *ngFor="let column of columnDefs" pSortableColumn="{{column.field}}">{{column.headerName}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product let-rowData let-columns="columns">
+        <tr [pSelectableRow]="rowData">
+            <td>
+                <p-tableCheckbox [value]="product"></p-tableCheckbox>
+            </td>
+            <td *ngFor="let col of columns">
+                <span *ngIf="col.field !== 'status'"> {{rowData[col.field]}} </span>
+                <span *ngIf="col.field == 'status'">
+                    <button class="{{submissionService.getStatusColor(rowData[col.field])}}">
+                        <i class="fa-sharp fa-solid fa-circle" style="font-size: '13px'"></i> {{rowData[col.field]}}
+                    </button>
+                </span>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
