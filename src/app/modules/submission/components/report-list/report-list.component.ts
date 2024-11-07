@@ -48,6 +48,6 @@ export class SubmissionListComponent implements OnInit {
       }
     ];
   }
-  
+  console.log( this.reportList, ' this.reportList');
   
 }
