@@ -24,6 +24,7 @@ export class SubmissionService {
      * @returns 
      */
     getStatusColor(status: string) {
+        console.log('status: ', status);
         let color = ''
         switch (status) {
             case SubmissionStatus.SUCCESS:
