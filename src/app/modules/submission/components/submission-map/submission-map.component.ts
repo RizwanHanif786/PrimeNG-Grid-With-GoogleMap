@@ -41,6 +41,7 @@ export class SubmissionMapComponent implements OnInit {
      * @param event 
      */
     handleOverlayClick(event: any) {
+        console.log('event: ', event);
         let isMarker = event.overlay.getTitle != undefined;
 
         if (isMarker) {
